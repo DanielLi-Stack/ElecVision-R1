@@ -13,21 +13,32 @@ Validated through  benchmark experiments, ElecVision-R1 demonstrates superior pe
 [**Paper**]() | [**Project Page**]() | [**Model Weights**]() | [**Huggingface Demo**]() |
 
 
-*Figure 1) Graphic Abstract of Segement Any Architecture Facade (SAAF).*
-![img](assets/01.png)
+*Figure 1) Comparative overview and the proposed system. (a) Conventional data-driven pipeline. (b) Instruction-tuned VLM pipeline. (c) ElecVision-R1: a zero/few-shot agent integrating GRPO-based policy optimization and Graph-based RAG retrieval-and-reasoning, enabling step-by-step diagnosis for power-equipment inspection and reliability assessment.*
+![img](assets/img(2).png)
 
 *Figure 2) Schematic diagram of the reference segmentation dataset.*
-![img](assets/05.png)
+![img](assets/img(6).png)
 
 *Figure 3) The pipeline of SAAF. Given the input image and text query, the multimodal LLM (e.g, LLaVA ) generates text output. The last-layer embedding for the <SEG> token is then decoded into the segmentation mask via the decoder..*
-![img](assets/06.png)
+![img](assets/img(7).png)
 
 *Figure 4) Segmentation results of SAAF on different datasets.*
-![img](assets/02.png)
+![img](assets/img(8).png)
 
 *Figure 5) SAAF performs wall and window segmentation based on semantic guidance.*
-![img](assets/03.png)
+![img](assets/img(1).png)
 
+*Figure 6) SAAF performs wall and window segmentation based on semantic guidance.*
+![img](assets/img(9).png)
+
+*Figure 7) The pipeline of SAAF. Given the input image and text query, the multimodal LLM (e.g, LLaVA ) generates text output. The last-layer embedding for the <SEG> token is then decoded into the segmentation mask via the decoder..*
+![img](assets/img(3).png)
+
+*Figure 8) Segmentation results of SAAF on different datasets.*
+![img](assets/img(4).png)
+
+*Figure 9) SAAF performs wall and window segmentation based on semantic guidance.*
+![img](assets/img(5).png)
 
 
 ## Dataset
