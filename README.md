@@ -52,19 +52,19 @@ Validated through  benchmark experiments, ElecVision-R1 demonstrates superior pe
 
 ## TODO List
 
-- [x] Release part of Segment-Any-Architecture-Facade dataset. 
-- [ ] Release Segment-Any-Architecture-Facade inference code and pretrain weights.
-- [ ] Upload Segment-Any-Architecture-Facade training dataset.
-- [ ] Release Segment-Any-Architecture-Facade code.
+- [x] Release part of ElecInsp-QA dataset. 
+- [ ] Release ElecVision-R1 inference code and pretrain weights.
+- [ ] Upload ElecVision-R1 training dataset.
+- [ ] Release ElecVision-R1 code.
 
 
 
 ## Inference
 
 ```
-python Segment_Any_Architecture_Facade_Sample.py --dataset ArchiMetricsNet --batch_size 32  --color_configuration 0 --model_path ckpts/exp/model10000.pt --num_samples 64
+python ElecVision-R1.py --dataset ElecInsp-QA --batch_size 32  --color_configuration 0 --model_path ckpts/exp/model10000.pt --num_samples 64
 ```
 ## Train
 
 ```
-python Segment_Any_Architecture_Facade_Train.py --dataset ArchiMetricsNet --batch_size 32  --color_configuration 0 
+python Segment_Any_Architecture_Facade_Train.py --dataset ElecInsp-QA --batch_size 32  --color_configuration 0 
