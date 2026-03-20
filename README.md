@@ -1,4 +1,7 @@
 # ElecVision-R1: A Multimodal LLM-Based Framework for Image Anomaly Detection and Quality Diagnosis in Power Systems
+
+> **Update (2026.3.20):** ElecInsp-QA dataset is now open-sourced.
+> 
 Abstract: Substations are crucial components in power transmission networks, playing a vital role in ensuring system stability and safety. In recent years, intelligent inspection technologies have achieved notable progress in image recognition, anomaly detection, and multimodal modeling. However, significant challenges remain in real-world industrial settings: the scarcity of domain-specific data limits robust adaptation, complex diagnostic tasks demand explicit multi-step reasoning, and effective decision-making requires integrating structured regulatory knowledge.
 </p>
 
