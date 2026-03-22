@@ -2,7 +2,7 @@
 
 ## 📢 Latest Update
 
-**2026.3.20:** We have open-sourced the **ElecInsp-QA dataset**.
+**2026.3.20:** We have open-sourced the **ElecInsp-QA-Mini dataset**.
 > 
 Abstract: Substations are crucial components in power transmission networks, playing a vital role in ensuring system stability and safety. In recent years, intelligent inspection technologies have achieved notable progress in image recognition, anomaly detection, and multimodal modeling. However, significant challenges remain in real-world industrial settings: the scarcity of domain-specific data limits robust adaptation, complex diagnostic tasks demand explicit multi-step reasoning, and effective decision-making requires integrating structured regulatory knowledge.
 </p>
