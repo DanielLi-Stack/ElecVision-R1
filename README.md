@@ -72,4 +72,4 @@ python ElecVision-R1.py --dataset ElecInsp-QA --batch_size 32  --color_configura
 ## Train
 
 ```
-python Segment_Any_Architecture_Facade_Train.py --dataset ElecInsp-QA --batch_size 32  --color_configuration 0 
+python ElecInsp-QA_Train.py --dataset ElecInsp-QA --batch_size 32  --color_configuration 0 
