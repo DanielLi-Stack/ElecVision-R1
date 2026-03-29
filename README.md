@@ -67,9 +67,38 @@ Validated through  benchmark experiments, ElecVision-R1 demonstrates superior pe
 ## Inference
 
 ```
-python ElecVision-R1.py --dataset ElecInsp-QA --batch_size 32  --color_configuration 0 --model_path ckpts/exp/model10000.pt --num_samples 64
+python inference.py \
+  --dataset ElecInsp-QA \
+  --base_model Qwen2.5-VL-7B \
+  --model_path ckpts/elecvision_r1 \
+  --enable_rag \
+  --temperature 1.0 \
+  --max_new_tokens 1024
 ```
 ## Train
 
 ```
-python ElecInsp-QA_Train.py --dataset ElecInsp-QA --batch_size 32  --color_configuration 0 
+# Stage 1: supervised fine-tuning (SFT)
+python train_sft.py \
+  --dataset ElecInsp-QA \
+  --base_model Qwen2.5-VL-7B \
+  --freeze_visual true \
+  --lora_r 8 \
+  --lora_alpha 32 \
+  --lora_dropout 0.05 \
+  --max_seq_len 8192 \
+  --epochs 3 \
+  --lr 5e-5
+
+# Stage 2: GRPO post-training
+python train_grpo.py \
+  --dataset ElecInsp-QA \
+  --base_model Qwen2.5-VL-7B \
+  --init_ckpt ckpts/elecvision_sft \
+  --max_image_resolution 1280x784 \
+  --num_generations 8 \
+  --temperature 1.0 \
+  --max_completion_len 1024 \
+  --epochs 1 \
+  --lr 1e-6 \
+  --per_device_batch_size 4
