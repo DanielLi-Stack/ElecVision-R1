@@ -16,7 +16,7 @@ Validated through  benchmark experiments, ElecVision-R1 demonstrates superior pe
 
 
 
-[**Paper**]() | [**Project Page**]() | [**Model Weights**]() | [**Huggingface Demo**]() |
+[**Paper**]() | [**Project Page**]() | [**Model Weights**]() | [**Huggingface Demo**]() | [**ElecInsp-QA-Mini dataset**]() |
 
 ![img](assets/01.png)
 *Figure 1) Comparative overview and the proposed system. (a) Conventional data-driven pipeline. (b) Instruction-tuned VLM pipeline. (c) ElecVision-R1: a zero/few-shot agent integrating GRPO-based policy optimization and Graph-based RAG retrieval-and-reasoning, enabling step-by-step diagnosis for power-equipment inspection and reliability assessment.*<br><br>
